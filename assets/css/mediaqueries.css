@@ -1,0 +1,25 @@
+
+
+@media screen and (max-width:767px) {
+    .primary-nav {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    #main-footer .container.footer-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    #main-footer .company, #main-footer .links {
+        padding: 20px 0;
+    }
+
+    #main-footer .copyright {
+        text-align: center;
+    }
+
+}
