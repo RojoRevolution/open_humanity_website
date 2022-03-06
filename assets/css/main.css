@@ -19,8 +19,8 @@
     --80: 80px;
     --100: 100px;
     /* Fonts */
-    --header-font:'Patua One', Helvetica, Arial, sans-serif;
-    --copy-font: 'Maven Pro', Helvetica, Arial, sans-serif;
+    --header-font:'Inter', Helvetica, Arial, sans-serif;
+    --copy-font: 'Inter', Helvetica, Arial, sans-serif;
     /* Effects */
     --light-glow: 0 0 20px 0 rgba(255,255,255,.35);
 }
@@ -29,26 +29,31 @@
 body {
       background: var(--dark);
       color: var(--light);
+      font-family: var(--copy-font);
 }
 
 h1 {
     font-family: var(--header-font);
-    font-size: 4rem;
-    line-height: 4.25rem;
+    font-size: 3.25rem;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -.02em;
     margin: var(--20) 0;
 }
 
 h2 {
-    font-family: var(--copy-font);
-    font-size: 2rem;
+    font-family: var(--header-font);
+    font-size: 3rem;
     font-weight: 700;
     margin: var(--20) 0;
 }
 
 h3 {
-    font-family: var(--header-font);
-    font-size: 3rem;
+    font-family: var(--copy-font);
+    font-size: 2rem;
+    font-weight: 700;
     margin: var(--20) 0;
+    line-height: 1.25;
 }
 
 h4 {
@@ -61,6 +66,8 @@ h4 {
 p {
     font-family: var(--copy-font);
     margin: var(--20) 0;
+    line-height: 1.5rem;
+    color: var(--soft-light);
 }
 
 a {
@@ -86,14 +93,25 @@ a {
     box-shadow: var(--light-glow);
 }
 
+.padding-top-100 {
+    padding-top:100px;
+}
+
 /* Utils */
 .flex-half {
     flex: .5 0 0%;
 }
 
+.card {
+    background: var(--darkest);
+    border: 1px solid var(--soft-dark);
+    padding: 2rem;
+    border-radius: 12px;
+}
+
 /* Header */
 #main-header {
-      padding: 1rem 2rem;
+      padding: .5rem 2rem;
       position: fixed;
       width: 100%;
       background: var(--dark);
@@ -140,6 +158,10 @@ a {
 
 #main-header nav ul li.sign-up-header > a {
     color: var(--light);
+}
+
+.header-logo {
+    max-width: 175px;
 }
 
 /* Mobile Menu */
@@ -287,29 +309,49 @@ a {
 
 /* Main Sections */
 #hero {
-      min-height: 100vh;
+      min-height: 720px;
       padding: var(--100) 0;
+      text-align: center;
 }
 
-#how-it-works, #bottom-cta {
-        padding: var(--100) 0;
+#hero p {
+    font-size: 1.75rem;
 }
 
 #how-it-works {
-    background-color: var(--soft-dark);
+        padding: var(--20) 0;
+}
+
+#how-it-works .container {
+    max-width: 1024px;
 }
 
 #bottom-cta {
-      background: var(--dark);
+    padding: var(--100) 0;
+}
+
+
+#bottom-cta {
+      background: var(--soft-dark);
 }
 
 #main-footer {
       background: var(--darkest);
 }
 
+/* Hero Section */
+.hero-img {
+    max-width: 500px;
+    width: 100%;
+}
+
 /* How It Works */
 .content-area {
       padding: var(--100) var(--20);
+}
+
+.main-content-img {
+    max-width: 300px;
 }
 
 /* Bottom CTA */
@@ -355,8 +397,41 @@ a {
 
 .social-icon {
     margin: 5px;
+    border-radius: 50px;
 }
 
 .social-icon:hover {
     box-shadow: var(--light-glow);
+}
+
+
+/* Contact Us Page */
+.contact-form {
+    max-width: 460px;
+}
+
+/* Privacy Policy */
+#privacy-policy #privacy-content ul {
+    padding-left: 30px;
+}
+
+#privacy-policy #privacy-content ul li {
+    color: var(--soft-light);
+    line-height: 1.5rem;
+    list-style-type: disc;
+}
+
+#terms-page ol {
+    padding-left: 40px;
+}
+
+#terms-page ol li {
+    color: var(--soft-light);
+    line-height: 1.5rem;
+    list-style-type: num;
+    margin-bottom: 12px;
+}
+
+#terms-page ol li.alpha {
+    list-style-type: lower-alpha;
 }
