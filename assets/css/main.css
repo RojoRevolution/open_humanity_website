@@ -167,7 +167,7 @@ a {
 /* Mobile Menu */
 .menu {
     display: none;
-    position: absolute;
+    position: fixed;
     height: 28px;
     width: 38px;
     right: 20px;
