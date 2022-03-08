@@ -6,9 +6,12 @@
     --secondary-light: #2596f4;
     --light: #fff;
     --soft-light: #d1d3d4;
-    --darkest: #041119;
-    --dark: #082032;
-    --soft-dark: #2C394B;
+    /* --darkest: #041119; */
+    --darkest: #0e0e0e;
+    /* --dark: #082032; */
+    --dark: #1f1f1f;
+    /* --soft-dark: #2C394B; */
+    --soft-dark: #2B2B2B;
     --light-dark: #334756;
     --grey: #777777;
     --error: #FF4C29;
@@ -23,6 +26,7 @@
     --copy-font: 'Inter', Helvetica, Arial, sans-serif;
     /* Effects */
     --light-glow: 0 0 20px 0 rgba(255,255,255,.35);
+    --dark-glow: 0 0 20px 0 rgba(0,0,0,.35);
 }
 
 /* Universal */
@@ -84,13 +88,18 @@ a {
     font-family: var(--copy-font);
     text-transform: uppercase;
     padding: .5rem 1.5rem;
+    /* box-shadow: var(--dark-glow); */
+    text-shadow: 2px 2px var(--secodary-dark);
+
 }
 
 .primary-btn:hover {
     color: var(--light);
     background: var(--secondary-light);
     transition: .25s ease-in;
-    box-shadow: var(--light-glow);
+    /* box-shadow: var(--light-glow); */
+    text-shadow: 0 0 var(--secodary-dark);
+
 }
 
 .padding-top-100 {
@@ -109,12 +118,17 @@ a {
     border-radius: 12px;
 }
 
+.form-content {
+    max-width: 550px;
+}
+
 /* Header */
 #main-header {
       padding: .5rem 2rem;
       position: fixed;
       width: 100%;
-      background: var(--dark);
+      background: rgba(14, 14, 14, .7);
+      z-index: 1;
 }
 
 #main-header nav ul {
@@ -148,12 +162,17 @@ a {
     transition: .25s ease-in;
     cursor: pointer;
     margin: 0 6px;
+    /* box-shadow: var(--dark-glow); */
+    text-shadow: 2px 2px var(--secodary-dark);
+    
 }
 
 .sign-up-header:hover {
     background: var(--secondary-light);
     transition: .25s ease-in;
-    box-shadow: var(--light-glow);
+    /* box-shadow: var(--light-glow); */
+    text-shadow: 0 0 var(--secodary-dark);
+
 }
 
 #main-header nav ul li.sign-up-header > a {
@@ -309,9 +328,11 @@ a {
 
 /* Main Sections */
 #hero {
-      min-height: 720px;
-      padding: var(--100) 0;
-      text-align: center;
+    background: var(--darkest);
+    min-height: 720px;
+    padding: var(--100) 0;
+    text-align: center;
+    clip-path: ellipse(83% 100% at 55.85% 0%);
 }
 
 #hero p {
@@ -320,6 +341,15 @@ a {
 
 #how-it-works {
         padding: var(--20) 0;
+}
+
+#how-it-works h3::before {
+    content: " ";
+    padding: 4px 2px;
+    background-color: var(--secondary-color);
+    position: absolute;
+    left: -20px;
+    height: 40px;
 }
 
 #how-it-works .container {
@@ -337,7 +367,10 @@ a {
 
 #main-footer {
       background: var(--darkest);
+      position: relative;
+      padding: 70px 0 0 0;
 }
+
 
 /* Hero Section */
 .hero-img {
@@ -360,9 +393,19 @@ a {
 }
 
 
+/* Careers Page */
+#career-content {
+    min-height: 500px;
+}
+
+#signup-page {
+    min-height: 600px;
+}
+
 /* Footer */
+
 #main-footer .footer-content {
-    padding: var(--60) var(--20);
+    padding: 0 10px 50px 10px;
 }
 
 #main-footer .copyright {
@@ -390,7 +433,7 @@ a {
 }
 
 #main-footer ul li a:hover {
-    color: var(--light);
+    color: var(--secondary-color);
     padding-left: 2px;
     transition: .25s ease-out;
 }
@@ -406,7 +449,7 @@ a {
 
 
 /* Contact Us Page */
-.contact-form {
+.contact-form, .newsletter-form {
     max-width: 460px;
 }
 

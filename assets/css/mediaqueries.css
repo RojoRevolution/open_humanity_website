@@ -1,4 +1,8 @@
-
+ @media screen and (max-width:900px) { 
+    #hero {
+        clip-path: ellipse(100% 100% at 55.85% 0%);
+    }
+}
 
 @media screen and (max-width:767px) {
     .primary-nav {
@@ -7,6 +11,11 @@
 
     .menu {
         display: block;
+    }
+
+    .hero-img {
+        max-width: 420px;
+        width: 100%;
     }
 
     #main-footer .container.footer-content {
@@ -22,4 +31,32 @@
         text-align: center;
     }
 
+}
+
+@media screen and (max-width: 600px) {
+    #hero {
+        clip-path: ellipse(130% 100% at 55.85% 0%);
+    }
+
+    .main-content-img {
+        max-width: 250px;
+        margin-bottom: 30px;
+    }
+
+
+}
+
+@media screen and (max-width: 575px) {
+    .hero-img {
+        max-width: 340px;
+        width: 100%;
+    }
+
+    .col-reverse {
+        flex-direction: column-reverse;
+    }
+
+    #how-it-works .text-content {
+        padding: 0 30px;
+    }
 }

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get notified about our launch | Open Humanity</title>
+    <title>Sign up | Open Humanity</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +19,7 @@
     <link href="../assets/css/mediaqueries.css" rel="stylesheet">
 </head>
 
-<body>
+<body id="signup-page">
     <!-- Burger Menu Icon -->
     <div id="menu-icon" class="menu" status="closed">
         <div class="position-relative">
@@ -45,7 +45,6 @@
             <div class="col">
                 <a href="../index.html"><img class="pt-2 header-logo" src="../assets/images/logos/OpenHumanity_logo.svg"
                         alt="Open Humanity Logo"></a>
-                <p style="margin: 18px 0 0 0;">Spread Hope, Spread Kindness, Spread Love!</p>
             </div>
             <div class="col">
                 <!-- Desktop Nav -->
@@ -60,11 +59,26 @@
             </div>
         </div>
     </header>
-    <!-- Hero Area -->
-    <section id="hero" class="container-flex">
-        <div class="container">
-            <h1>sign up</h1>
-        </div>
+    <section id="signup-page" class="container-flex py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="row form-content">
+                    <h1 class="pt-5">Be the first to know</h1>
+                    <p>Sign up below to recieve updates about our platform, and news about when we are going live.</p>
+                    <div class="col">
+                        <form class="newsletter-form pt-5">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="email@email.com" required>
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-md rounded-pill primary-btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
     </section>
     <footer id="main-footer" class="container-flex">
         <div class="container footer-content">
@@ -72,6 +86,7 @@
                 <div class="col-md-6 company">
                     <a href="../index.html"><img src=" ../assets/images/logos/OpenHumanity_logo.svg"
                             alt="Open Humanity Logo"></a>
+                    <p style="margin: 18px 0 0 0;">Spread Hope, Spread Kindness, Spread Love!</p>
                     <div class="py-3">
                         <a href="https://www.facebook.com/OpenHumanityInc/" target="_blank">
                             <img class="social-icon" src="../assets/images/social/facebook.svg" alt="Facebook icon">
