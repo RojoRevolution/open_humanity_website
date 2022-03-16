@@ -14,6 +14,7 @@
     --soft-dark: #2B2B2B;
     --light-dark: #334756;
     --grey: #777777;
+    --accent-green:rgb(20, 201, 187);
     --error: #FF4C29;
     /* Spacing */
     --20: 20px;
@@ -25,7 +26,7 @@
     --header-font:'Inter', Helvetica, Arial, sans-serif;
     --copy-font: 'Inter', Helvetica, Arial, sans-serif;
     /* Effects */
-    --light-glow: 0 0 20px 0 rgba(255,255,255,.35);
+    --light-glow: 0 0 20px 0 rgba(20,201,187,.45);
     --dark-glow: 0 0 20px 0 rgba(0,0,0,.35);
 }
 
@@ -129,6 +130,7 @@ a {
       width: 100%;
       background: rgba(14, 14, 14, .7);
       z-index: 1;
+      /* border-bottom: 1px solid var(--accent-green); */
 }
 
 #main-header nav ul {
@@ -152,7 +154,7 @@ a {
 }
 
 #main-header nav ul li a:hover {
-    color: var(--secondary-light);
+    color: var(--accent-green);
     transition: .25s ease-out;
 }
 
@@ -346,7 +348,7 @@ a {
 #how-it-works h3::before {
     content: " ";
     padding: 4px 2px;
-    background-color: var(--secondary-color);
+    background-color: var(--accent-green);
     position: absolute;
     left: -20px;
     height: 40px;
@@ -417,6 +419,15 @@ a {
     padding-bottom: 1rem;
 }
 
+#main-footer h4::before {
+    content:" ";
+    padding: 2px;
+    width: 20px;
+    background-color:var(--accent-green);
+    margin-left: -14px;
+    margin-right: 14px;
+}
+
 #main-footer ul {
     padding: 0;
     margin: 0;
@@ -433,7 +444,7 @@ a {
 }
 
 #main-footer ul li a:hover {
-    color: var(--secondary-color);
+    color: var(--accent-green);
     padding-left: 2px;
     transition: .25s ease-out;
 }
