@@ -26,45 +26,8 @@
 </head>
 
 <body id="terms-page">
-    <!-- Burger Menu Icon -->
-    <div id="menu-icon" class="menu" status="closed">
-        <div class="position-relative">
-            <div id="menu-top" class="menu-element"></div>
-            <div id="menu-middle" class="menu-element"></div>
-            <div id="menu-bottom" class="menu-element"></div>
-        </div>
-    </div>
-    <!-- Mobile Nav -->
-    <div id="mobile-menu">
-        <nav id="mobile-menu-content" class="py-5">
-            <ul>
-                <li><a href="./about">About</a></li>
-                <li><a href="./careers">Careers</a></li>
-                <li><a href="./contact">Contact</a></li>
-                <li><a href="./sign-up">Sign Up</a></li>
-            </ul>
-        </nav>
-    </div>
-    <!-- Header -->
-    <header id="main-header" class="container-flex">
-        <div class="row justify-content-between">
-            <div class="col">
-                <a href="../index"><img class="pt-2 header-logo" src="../assets/images/logos/OpenHumanity_logo.svg"
-                        alt="Open Humanity Logo"></a>
-            </div>
-            <div class="col">
-                <!-- Desktop Nav -->
-                <nav class="primary-nav">
-                    <ul class="row">
-                        <li class="col"><a href="./about">About</a></li>
-                        <li class="col"><a href="./careers">Careers</a></li>
-                        <li class="col"><a href="./contact">Contact</a></li>
-                        <li class="col sign-up-header"><a href="./sign-up">Sign Up</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
+    <?php include('../../includes/mobile-menu.php') ?>
+    <?php include('../../includes/main-header.php') ?>
     <!-- Content Area -->
     <section class="container-flex py-5">
         <div class="container pt-5">
@@ -501,64 +464,8 @@
             </ol>
         </div>
     </section>
-    <footer id="main-footer" class="container-flex">
-        <div class="container footer-content">
-            <div class="row">
-                <div class="col-md-6 company">
-                    <a href="../index.html"><img src=" ../assets/images/logos/OpenHumanity_logo.svg"
-                            alt="Open Humanity Logo"></a>
-                    <p style="margin: 18px 0 0 0;">Spread Hope, Spread Kindness, Spread Love!</p>
-                    <div class="py-3">
-                        <a href="https://www.facebook.com/OpenHumanityInc/" target="_blank">
-                            <img class="social-icon" src="../assets/images/social/facebook.svg" alt="Facebook icon">
-                        </a>
-                        <a href="https://twitter.com/OpenHumanityInc" target="_blank">
-                            <img class="social-icon" src="../assets/images/social/twitter.svg" alt="Twitter icon">
-                        </a>
-
-                        <a href="https://www.linkedin.com/company/openhumanityinc" target="_blank">
-                            <img class="social-icon" src="../assets/images/social/linkedin.svg" alt="LinkedIn icon">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="row">
-                        <div class="col-md-6 links">
-                            <h4>Quick Links</h4>
-                            <ul>
-                                <li><a href="./about">About</a></li>
-                                <li><a href="./careers">Careers</a></li>
-                                <li><a href="./contact">Contact</a></li>
-                                <li><a href="./sign-up">Sign Up</a></li>
-                            </ul>
-                        </div>
-                        <div class=" col-md-6 links">
-                            <h4>Legal</h4>
-                            <ul>
-                                <li class="flex-half"><a href="./terms">Terms of Service</a></li>
-                                <li class="flex-half"><a href="./privacy-policy">Privacy Policy</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <div class="container">
-            <div class="row">
-                <p class="copyright py-3">Copyright ©
-                    <script>document.write(new Date().getFullYear())</script> Open Humanity Inc. All
-                    Rights Reserved.
-                </p>
-            </div>
-        </div>
-    </footer>
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-    <script src="../assets/js/mobile-menu.js" type="text/javascript"></script>
+    <?php include('../../includes/footer.php') ?>
+    <?php include('../../includes/scripts.php') ?>
 </body>
 
 </html>
