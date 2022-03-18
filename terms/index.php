@@ -1,10 +1,10 @@
 <?php 
 $pageTitle = "Terms of Conditions | Open Condition";
 $bodyID = "terms-page";
-require('../../includes/head.php') 
+require('../includes/head.php') 
 ?>
-    <?php require('../../includes/mobile-menu.php') ?>
-    <?php require('../../includes/main-header.php') ?>
+    <?php require('../includes/mobile-menu.php') ?>
+    <?php require('../includes/main-header.php') ?>
     <!-- Content Area -->
     <section class="container-flex py-5">
         <div class="container pt-5">
@@ -441,5 +441,5 @@ require('../../includes/head.php')
             </ol>
         </div>
     </section>
-    <?php require('../../includes/footer.php') ?>
-    <?php require('../../includes/scripts.php') ?>
+    <?php require('../includes/footer.php') ?>
+    <?php require('../includes/scripts.php') ?>

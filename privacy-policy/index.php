@@ -1,10 +1,10 @@
 <?php 
 $pageTitle = "Privacy Policy | Open Humanity";
 $bodyID = "privacy-policy";
-require('../../includes/head.php') 
+require('../includes/head.php') 
 ?>
-    <?php require('../../includes/mobile-menu.php') ?>
-    <?php require('../../includes/main-header.php') ?>
+    <?php require('../includes/mobile-menu.php') ?>
+    <?php require('../includes/main-header.php') ?>
     <!-- Content -->
     <section id="privacy-content" class="container-flex py-5">
         <div class="container pt-5">
@@ -113,5 +113,5 @@ require('../../includes/head.php')
             </p>
         </div>
     </section>
-    <?php require('../../includes/footer.php') ?>
-    <?php require('../../includes/scripts.php') ?>
+    <?php require('../includes/footer.php') ?>
+    <?php require('../includes/scripts.php') ?>
