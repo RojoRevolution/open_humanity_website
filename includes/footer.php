@@ -31,8 +31,8 @@
                         <div class="col-md-6 links">
                             <h4>Legal</h4>
                             <ul>
-                                <li class="flex-half"><a href="./terms">Terms of Service</a></li>
-                                <li class="flex-half"><a href="./privacy-policy">Privacy Policy</a></li>
+                                <li class="flex-half"><a href="../terms">Terms of Service</a></li>
+                                <li class="flex-half"><a href="../privacy-policy">Privacy Policy</a></li>
                             </ul>
                         </div>
                     </div>
