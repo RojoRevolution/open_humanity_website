@@ -13,21 +13,22 @@ require('../includes/head.php')
         <div class="container py-5">
             <div class="row">
                 <div class="col-md-6">
-                    <form class="contact-form">
+                    <form id="contact-form" action="../mailer.php" method="post" class="contact-form">
                         <div class="mb-3">
                             <label for="name" class="form-label">Your Name:</label>
                             <input type="text" class="form-control" id="name" aria-describedby="name"
-                                placeholder="First and Last" required>
+                                placeholder="First and Last" maxlength="250" required>
                         </div>
 
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Email address:</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp" placeholder="email@email.com" required>
+                            <input type="email" class="form-control" id="email-input"
+                                aria-describedby="emailInput" placeholder="email@email.com" maxlength="250" required oninvalid="this.setCustomValidity('Enter a Valid Email Address')"
+    oninput="this.setCustomValidity('')">
                             <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                         </div>
                         <div class="mb-3">
-                            <select class="form-select" aria-label="Default select example" required>
+                            <select id="option" class="form-select" aria-label="Default select example" required>
                                 <option selected>Choose an option</option>
                                 <option value="1">I'm a nonprofit interested in becoming a beta tester</option>
                                 <option value="2">I'm a vendor interested in selling on your platform.</option>
@@ -36,18 +37,19 @@ require('../includes/head.php')
                             </select>
                         </div>
                         <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="form-label">Message:</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <label for="exampleFormControlTextarea1" class="form-label">Message(optional):</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" maxlength="500"></textarea>
                         </div>
                         <button type="submit" class="btn btn-md rounded-pill primary-btn">Submit</button>
                     </form>
                 </div>
                 <div class="col-sm">
-                    <p class="card" style="max-width: 260px;">
+                    <p class="card" style="max-width: 300px;">
                         <strong>Open Humanity, Inc.</strong><br>
                         6001 W Parmer Ln<br>
                         STE 370 PMB 1533<br>
-                        Austin, TX 78727<br>
+                        Austin, TX 78727<br><br>
+                        <a href="mailto:hello@openhumanity.com">hello@openhumanity.com</a><br>
                     </p>
                 </div>
             </div>
