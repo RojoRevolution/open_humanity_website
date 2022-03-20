@@ -13,7 +13,7 @@ require('../includes/head.php')
         <div class="container py-5">
             <div class="row">
                 <div class="col-md-6">
-                    <form class="contact-form">
+                    <form id="contact-form" action="./mailer.php" method="post" class="contact-form">
                         <div class="mb-3">
                             <label for="name" class="form-label">Your Name:</label>
                             <input type="text" class="form-control" id="name" aria-describedby="name"
@@ -43,11 +43,12 @@ require('../includes/head.php')
                     </form>
                 </div>
                 <div class="col-sm">
-                    <p class="card" style="max-width: 260px;">
+                    <p class="card" style="max-width: 300px;">
                         <strong>Open Humanity, Inc.</strong><br>
                         6001 W Parmer Ln<br>
                         STE 370 PMB 1533<br>
-                        Austin, TX 78727<br>
+                        Austin, TX 78727<br><br>
+                        <a href="mailto:hello@openhumanity.com">hello@openhumanity.com</a><br>
                     </p>
                 </div>
             </div>
