@@ -39,46 +39,54 @@ if(isset($_POST['submit'])){
 	$email_message = ob_get_contents();
 	ob_end_clean();
 
-	// $url = 'https://www.google.com/recaptcha/api/siteverify';
-	// $data = array(
-	// 	'secret' => $secret_key,
-	// 	'response' => $_POST["g-recaptcha-response"]
-	// );
-	// $options = array(
-	// 	'http' => array (
-	// 		'method' => 'POST',
-	// 		'content' => http_build_query($data)
-	// 	)
-	// );
-	// $context  = stream_context_create($options);
-	// $verify = file_get_contents($url, false, $context);
-	// $captcha_success=json_decode($verify);
+	$url = 'https://www.google.com/recaptcha/api/siteverify';
+	$data = array(
+		'secret' => $secret_key,
+		'response' => $_POST["g-recaptcha-response"]
+	);
+	$options = array(
+		'http' => array (
+			'method' => 'POST',
+			'content' => http_build_query($data)
+		)
+	);
+	$context  = stream_context_create($options);
+	$verify = file_get_contents($url, false, $context);
+	$captcha_success=json_decode($verify);
 
-	// if ($captcha_success->success==false) {
-	// 	//echo "<p>You are a bot! Go away!</p>";
-	// 	//echo($email_message);
+	if ($captcha_success->success==false) {
+		//echo "<p>You are a bot! Go away!</p>";
+		//echo($email_message);
 		
-	// 	//Create variable for failed Captcha 
-	// 	session_start();
-	// 	$_SESSION['captcha_error'] = 'Failed';
+		//Create variable for failed Captcha 
+		session_start();
+		$_SESSION['captcha_error'] = 'Failed';
 		
-	// 	//redirect back to form
-	// 	header('Location:contact-us/');
+		//redirect back to form
+		header('Location:contact-us/');
 		
-	// } else if ($captcha_success->success==true) {
-	// 	//echo $captcha_success;
-	// 	//echo($sender_name);
+	} else if ($captcha_success->success==true) {
+		//echo $captcha_success;
+		//echo($sender_name);
 		
-	// 	mail($mail_to, $mail_subject, $email_message, $header);
-	// 	session_start();
-	// 	session_destroy();
+		mail($mail_to, $mail_subject, $email_message, $header);
+		session_start();
+		session_destroy();
 		
-	// 	//redirect to thank you page;
-	// 	header('Location:contact-us/thank-you.php');
+		//redirect to thank you page;
+		header('Location:contact-us/thank-you.php');
 		
 		
 
-	// }
+	}
+
+	mail($mail_to, $mail_subject, $email_message, $header);
+	session_start();
+	session_destroy();
+
+	//redirect to thank you page;
+	header('Location:contact-us/thank-you.php');
+
 }
 
 
