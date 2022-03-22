@@ -36,7 +36,7 @@ if ($_POST['submit']) {
 </head>
 <body>
     <?php echo $result;?>
-    <form action="./mail.php" method="post">
+    <form method="post" role="form">
         <input type="text" name="name" placeholder="Your name">
         <input type="email" name="email" placeholder="Your email address">
         <input type="text" name="message" placeholder="Your message">
