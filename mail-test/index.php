@@ -1,3 +1,31 @@
+<?php
+
+if ($_POST['submit']) {
+    if(!$_POST['name']) {
+        $error="Please enter your name";
+    }
+    if(!$_POST['email']) {
+        $error="Please enter your email";
+    }
+    if(!$_POST['message']) {
+        $error="Please enter a message";
+    }
+    if ($error) {
+        $result="Error in the form";
+    } else {
+        mail("adyingswan@gmail.com", "Contact Message", "Name: ".$_POST['name']."
+        Email: ".$_POST['email']."
+        Message: ".$_POST["message"]);
+        
+        {
+            $result="Thank you we'll be in touch shortly";
+        }
+    }
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +35,7 @@
     <title>Test form</title>
 </head>
 <body>
+    <?php echo $result;?>
     <form action="./mail.php" method="post">
         <input type="text" name="name" placeholder="Your name">
         <input type="email" name="email" placeholder="Your email address">
