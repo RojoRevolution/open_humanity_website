@@ -65,7 +65,7 @@ h4 {
     font-family: var(--copy-font);
     font-size: 1rem;
     font-weight: 700;
-    text-transform: uppercase;
+    text-transform: none;
 }
 
 p {
@@ -182,7 +182,8 @@ a {
 }
 
 .header-logo {
-    max-width: 175px;
+    max-width: 256px;
+    width: 99%;
 }
 
 /* Mobile Menu */
@@ -345,17 +346,24 @@ a {
         padding: var(--20) 0;
 }
 
-#how-it-works h3::before {
+#how-it-works h4::before {
     content: " ";
     padding: 4px 2px;
-    background-color: var(--ac);
+    background-color: var(--secondary-color);
     position: absolute;
-    left: -20px;
-    height: 40px;
+    left: -12px;
+    height: 20px;
+    bottom: -1px;
 }
 
 #how-it-works .container {
     max-width: 1024px;
+}
+
+#how-it-works .content {
+    max-width: 400px;
+    margin: 0 auto;
+    padding-top: 35px;
 }
 
 #bottom-cta {
