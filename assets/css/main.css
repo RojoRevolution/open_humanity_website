@@ -182,7 +182,8 @@ a {
 }
 
 .header-logo {
-    max-width: 175px;
+    max-width: 256px;
+    width: 99%;
 }
 
 /* Mobile Menu */
