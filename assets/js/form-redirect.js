@@ -26,6 +26,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     contactFormEl.addEventListener('submit', (e) => {
         // respondDiv.innerHTML = 'Form Submitted'
+        console.log('SUBMITTED')
         window.location.href = 'contact-success.html';
     })
 
