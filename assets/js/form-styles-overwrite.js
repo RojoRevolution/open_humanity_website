@@ -6,10 +6,13 @@ window.addEventListener('DOMContentLoaded', (event) => {
     const formBtnHover = document.querySelectorAll('.hbspt-form .input.hs-button.primary.large:hover');
     const hubSpotLogo = document.querySelectorAll('.hubspot-link__container.sproket');
 
+    const formIFrame = document.getElementById('hs-form-iframe-0');
+
     const addStyles = () => {
         // labels.classList.add('labelWhite')
-        hubSpotLogo.classList.add('d-none');
-        labels.style.display = 'none';
+        // hubSpotLogo.classList.add('d-none');
+        // labels.style.display = 'none';
+        formIFrame.contentWindow.document.getElementsByTagName('label').style.color = "#ffffff"
     }
 
     addStyles();
