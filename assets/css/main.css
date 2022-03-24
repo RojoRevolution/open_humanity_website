@@ -497,3 +497,7 @@ a {
 #terms-page ol li.alpha {
     list-style-type: lower-alpha;
 }
+
+#thanks {
+    min-height: 500px;
+}
