@@ -8,7 +8,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 
     const addStyles = () => {
-        labels.classList.add('labelWhite')
+        // labels.classList.add('labelWhite')
+        hubSpotLogo.classList.add('d-none');
+        labels.style.display = 'none';
     }
 
     addStyles();
