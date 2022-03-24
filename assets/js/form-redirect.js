@@ -1,6 +1,7 @@
 window.addEventListener('DOMContentLoaded', (event) => {
 
     const contactFormEl = document.getElementById('contact-form');
+    const newsletterForm = document.getElementById('newsletter-form');
     const contactBtn = document.getElementById('contact-submit');
     const contactNameValue = document.getElementById('name');
     const contactEmailValue = document.getElementById('email-input');
@@ -25,6 +26,12 @@ window.addEventListener('DOMContentLoaded', (event) => {
     // })
 
     contactFormEl.addEventListener('submit', (e) => {
+        // respondDiv.innerHTML = 'Form Submitted'
+        console.log('SUBMITTED')
+        window.location.href = 'contact-success.html';
+    })
+
+    newsletterForm.addEventListener('submit', (e) => {
         // respondDiv.innerHTML = 'Form Submitted'
         console.log('SUBMITTED')
         window.location.href = 'contact-success.html';
