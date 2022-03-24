@@ -16,8 +16,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
     }
 
     setTimeout(function () {
+        console.log('Logging after a timeout')
         formIFrame.contentWindow.document.getElementsByTagName('label').style.color = "#ffffff"
     }, 2000);
-
 
 })
