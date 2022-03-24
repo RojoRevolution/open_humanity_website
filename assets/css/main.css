@@ -501,3 +501,37 @@ a {
 #thanks {
     min-height: 500px;
 }
+
+/* Hubspot Form Styles */
+.hbspt-form label {
+    color: #fff !important;
+}
+
+.hbspt-form .hs-input {
+    color: var(--dark);
+}
+
+.hbspt-form .input.hs-button.primary.large {
+    background: var(--secondary-color);
+    transition: .25s ease-in;
+    cursor: pointer;
+    margin: 0 6px;
+    color: var(--light);
+    font-family: var(--copy-font);
+    text-transform: uppercase;
+    padding: .5rem 1.5rem;
+    /* box-shadow: var(--dark-glow); */
+    text-shadow: 2px 2px var(--secodary-dark);
+}
+
+.hbspt-form .input.hs-button.primary.large:hover {
+    color: var(--light);
+    background: var(--secondary-light);
+    transition: .25s ease-in;
+    /* box-shadow: var(--light-glow); */
+    text-shadow: 0 0 var(--secodary-dark);
+}
+
+.hubspot-link__container.sproket {
+    display: none;
+}
