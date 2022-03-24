@@ -507,6 +507,10 @@ a {
     color: #fff !important;
 }
 
+.labelWhite {
+    color: #fff !important;
+}
+
 .hbspt-form .hs-input {
     color: var(--dark);
 }
@@ -533,5 +537,5 @@ a {
 }
 
 .hubspot-link__container.sproket {
-    display: none;
+    display: none !important;
 }
