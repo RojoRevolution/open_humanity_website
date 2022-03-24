@@ -15,7 +15,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
         formIFrame.contentWindow.document.getElementsByTagName('label').style.color = "#ffffff"
     }
 
-    addStyles();
+    setTimeout(function () {
+        formIFrame.contentWindow.document.getElementsByTagName('label').style.color = "#ffffff"
+    }, 2000);
 
 
 })
