@@ -338,6 +338,7 @@ a {
     padding: var(--100) 0;
     text-align: center;
     clip-path: ellipse(83% 100% at 55.85% 0%);
+    overflow: hidden;
 }
 
 .shimmer {
