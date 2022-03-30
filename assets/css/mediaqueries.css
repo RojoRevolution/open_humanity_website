@@ -52,11 +52,11 @@
         width: 100%;
     }
 
-    #about #hero, #careers #hero, #contact #hero {
+    /* #about #hero, #careers #hero, #contact #hero {
         background-size: 124%;
         background-repeat: no-repeat;
         min-height: 280px;
-    }
+    } */
 
     #contact #hero {
         background-size: 144%;

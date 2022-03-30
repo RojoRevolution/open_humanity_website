@@ -385,7 +385,7 @@ a {
     font-size: 1.75rem;
 }
 
-#about #hero {
+/* #about #hero {
     background-color: var(--darkest);
     background-image: url('../images/stock-previews/AdobeStock_112973516_Preview.jpeg');
     background-attachment: fixed;
@@ -413,7 +413,7 @@ a {
     min-height: 500px;
     padding: var(--100) 0;
     text-align: center;
-}
+} */
 
 #how-it-works {
         padding: var(--20) 0;
